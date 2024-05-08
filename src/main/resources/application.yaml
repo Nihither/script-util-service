@@ -1,0 +1,24 @@
+#General settings
+server:
+  port: 8080
+
+#Spring settings
+spring:
+  application:
+    name: Script Util Service
+  #Database settings
+  database:
+    url: 'jdbc:postgresql://192.168.0.20:5432/script_util'
+    username: 'script_util_techuser'
+    password: '5843ffda'
+
+#Logging
+logging:
+  level:
+    org.springframework:
+      jdbc: DEBUG
+
+#Custom settings
+app:
+  jwtSecret: 'cbe34b4fa1a830fd069d8737b520a3805a536d7ae755a9dabac2b47185f5f04e'
+  jwtExpirationMs: 1800000
