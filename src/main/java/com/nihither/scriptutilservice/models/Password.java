@@ -6,21 +6,18 @@ import jakarta.validation.constraints.Size;
 
 import java.util.Date;
 
-@Entity
+@Entity(name = "pass")
 @Table(name = "pass")
 public class Password {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String group;
+    private String group_name;
     private String title;
     private String username;
-
     @NotBlank
     private String password;
-
     private String password_crypt;
     private String url;
     private String notes;
@@ -32,9 +29,9 @@ public class Password {
     public Password() {
     }
 
-    public Password(String group, String title, String username, String password, String password_crypt, String url,
+    public Password(String group_name, String title, String username, String password, String password_crypt, String url,
                     String notes, Date creation_time, Date last_modification_time, Date expiry_time, boolean rmv) {
-        this.group = group;
+        this.group_name = group_name;
         this.title = title;
         this.username = username;
         this.password = password;
@@ -56,11 +53,11 @@ public class Password {
     }
 
     public String getGroup() {
-        return group;
+        return group_name;
     }
 
     public void setGroup(String group) {
-        this.group = group;
+        this.group_name = group;
     }
 
     public String getTitle() {
