@@ -26,3 +26,4 @@ logging:
 app:
   jwtSecret: cbe34b4fa1a830fd069d8737b520a3805a536d7ae755a9dabac2b47185f5f04e
   jwtExpirationMs: 1800000
+  encryptionKey: +HgZVsYzkIef5yrCS2CT00MqbncuU904
