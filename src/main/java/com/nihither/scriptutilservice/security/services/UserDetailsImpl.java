@@ -1,7 +1,7 @@
 package com.nihither.scriptutilservice.security.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.nihither.scriptutilservice.models.User;
+import com.nihither.scriptutilservice.models.dao.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

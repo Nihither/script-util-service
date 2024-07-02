@@ -1,5 +1,6 @@
-package com.nihither.scriptutilservice.models;
+package com.nihither.scriptutilservice.models.dao;
 
+import com.nihither.scriptutilservice.models.enums.ERole;
 import jakarta.persistence.*;
 
 

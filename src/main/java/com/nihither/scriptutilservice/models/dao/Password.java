@@ -1,13 +1,12 @@
-package com.nihither.scriptutilservice.models;
+package com.nihither.scriptutilservice.models.dao;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 
 import java.util.Date;
 
-@Entity(name = "pass")
-@Table(name = "pass")
+@Entity
+@Table(name = "passwords")
 public class Password {
 
     @Id
@@ -18,7 +17,6 @@ public class Password {
     private String username;
     @NotBlank
     private String password;
-    private String password_crypt;
     private String url;
     private String notes;
     private Date creation_time;
@@ -29,13 +27,12 @@ public class Password {
     public Password() {
     }
 
-    public Password(String group_name, String title, String username, String password, String password_crypt, String url,
+    public Password(String group_name, String title, String username, String password, String url,
                     String notes, Date creation_time, Date last_modification_time, Date expiry_time, boolean rmv) {
         this.group_name = group_name;
         this.title = title;
         this.username = username;
         this.password = password;
-        this.password_crypt = password_crypt;
         this.url = url;
         this.notes = notes;
         this.creation_time = creation_time;
@@ -82,14 +79,6 @@ public class Password {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getPassword_crypt() {
-        return password_crypt;
-    }
-
-    public void setPassword_crypt(String password_crypt) {
-        this.password_crypt = password_crypt;
     }
 
     public String getUrl() {

@@ -1,6 +1,6 @@
 package com.nihither.scriptutilservice.security.services;
 
-import com.nihither.scriptutilservice.models.User;
+import com.nihither.scriptutilservice.models.dao.User;
 import com.nihither.scriptutilservice.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

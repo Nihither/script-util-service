@@ -1,7 +1,7 @@
 package com.nihither.scriptutilservice.repositories;
 
-import com.nihither.scriptutilservice.models.ERole;
-import com.nihither.scriptutilservice.models.Role;
+import com.nihither.scriptutilservice.models.enums.ERole;
+import com.nihither.scriptutilservice.models.dao.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

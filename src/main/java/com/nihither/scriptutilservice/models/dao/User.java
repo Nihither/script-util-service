@@ -1,4 +1,4 @@
-package com.nihither.scriptutilservice.models;
+package com.nihither.scriptutilservice.models.dao;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

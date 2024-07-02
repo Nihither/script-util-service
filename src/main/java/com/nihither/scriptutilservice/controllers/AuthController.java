@@ -1,8 +1,8 @@
 package com.nihither.scriptutilservice.controllers;
 
-import com.nihither.scriptutilservice.models.ERole;
-import com.nihither.scriptutilservice.models.Role;
-import com.nihither.scriptutilservice.models.User;
+import com.nihither.scriptutilservice.models.enums.ERole;
+import com.nihither.scriptutilservice.models.dao.Role;
+import com.nihither.scriptutilservice.models.dao.User;
 import com.nihither.scriptutilservice.repositories.RoleRepository;
 import com.nihither.scriptutilservice.repositories.UserRepository;
 import com.nihither.scriptutilservice.security.jwt.JwtUtils;

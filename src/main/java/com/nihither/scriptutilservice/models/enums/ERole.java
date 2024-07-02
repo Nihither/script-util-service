@@ -1,4 +1,4 @@
-package com.nihither.scriptutilservice.models;
+package com.nihither.scriptutilservice.models.enums;
 
 public enum ERole {
     ROLE_USER,
