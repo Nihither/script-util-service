@@ -4,10 +4,13 @@ import com.nihither.scriptutilservice.models.dao.Password;
 import com.nihither.scriptutilservice.repositories.PasswordRepository;
 import com.nihither.scriptutilservice.services.PasswordService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
+
+@Service
 public class PasswordServiceImpl implements PasswordService {
 
     @Autowired
